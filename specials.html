@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!---This website was created by: Lisa Templeton c0661989 2025--->
+<html lang="en">
+<head>
+  <title>Fryin' High Specials</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/special.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/logo12.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<header class="header-container">
+  <a href="index.html">
+    <img src="images/logo.png" alt="Fryin' High Logo" width="400" height="400">
+  </a>
+
+  <nav class="main-nav" aria-label="Main navigation">
+    <div class="hamburger" aria-label="Menu" role="button" tabindex="0">&#9776;</div>
+    <ul class="nav-list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="team.html">Our Team</a></li>
+      <li><a href="specials.html">Specials</a></li>
+      <li><a href="training.html">Training</a></li>
+      <li><a href="media.html">Media</a></li>
+      <li><a href="faqs.html">FAQs</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section id="hero">
+   <img src="images/heroooooo.png" alt="Fryin' High Hero Image" width="1520" height="500">
+</section>
+
+<main>
+  <h1>Weekly Specials</h1>
+
+  <div id="specials-container">
+    <!-- Product of the Week -->
+    <section class="special-item" aria-labelledby="special-pow">
+      <h2 id="special-pow">Product of the Week</h2>
+      <img src="images/OIPP.jpg" alt="Top-rated Fryin' High fryer on promotion">
+      <p>Get the best fryer at an unbeatable price! Limited time offer.</p>
+      <p><strong>Price:</strong> $99.99</p>
+      <a class="special-cta" href="contact.html">Order Now</a>
+    </section>
+
+    <!-- Combo Deal -->
+    <section class="special-item" aria-labelledby="special-combo">
+      <h2 id="special-combo">Combo Deal</h2>
+      <img src="images/downloadd.jpg" alt="Fryer combo with free recipe book">
+      <p>Buy one fryer and get a free recipe book!</p>
+      <p><strong>Price:</strong> $149.99</p>
+      <a class="special-cta" href="contact.html">Grab This Deal</a>
+    </section>
+
+    <!-- Holiday Special -->
+    <section class="special-item" aria-labelledby="special-holiday">
+      <h2 id="special-holiday">Holiday Special</h2>
+      <img src="images/images.jpg" alt="Holiday-themed Fryin' High fryer sale">
+      <p>Celebrate with crispy treats! 20% off all fryers.</p>
+      <p><strong>Price:</strong> $79.99</p>
+      <a class="special-cta" href="contact.html">Shop Holiday Special</a>
+    </section>
+  </div>
+
+
+  <section aria-labelledby="why-fryin-high">
+    <h3 id="why-fryin-high">Why buy from Fryin High</h3>
+	<div class="guarantee">
+		<img src="images/satt.png" alt="Guarantee shield icon" width="160" height="160" /><p>
+      We stand behind every sizzle. If your gear doesn’t help you fry smarter, safer, and tastier within 30 days,
+      we’ll make it right with an exchange or refund — no grease, no stress.
+      <strong>Love your fry or your money back.</strong></p>
+	</div>
+    <ul class="reasons">
+      <li class="reason">
+        <img src="images/premium.jpg" alt="Premium build quality icon" width="96" height="96" />
+        <div>
+            <strong>Quality you can taste:</strong> Durable, food‑safe materials built for consistent, crispy results.
+        </div>
+      </li>
+      <li class="reason">
+        <img src="images/safety.jpg" alt="Safety features icon" width="96" height="96" />
+        <div>
+          <strong>Safety first:</strong> Cool‑touch designs, thermal cutoffs, and clear guides to keep you confident.
+        </div>
+      </li>
+      <li class="reason">
+        <img src="images/downlod.jpg" alt="Customer support headset icon" width="96" height="96" />
+        <div>
+          <strong>Real support, real humans:</strong> Friendly help, quick replacements, and zero‑hassle returns.
+        </div>
+      </li>
+      <li class="reason">
+        <img src="images/value.jpg" alt="Best value tag icon" width="96" height="96" />
+        <div>
+          <strong>Value that lasts:</strong> Weekly deals, oil‑saving accessories, and gear that goes the distance.
+        </div>
+      </li>
+      <li class="reason"> 
+        <img src="images/recipeee.jpg" alt="Recipe book icon" width="96" height="96" />
+        <div>
+		   <strong>Recipe‑ready:</strong> Step‑by‑step guides for wings, tempura, donuts, and more.
+        </div>
+      </li>
+    </ul>
+  </section>
+</section>
+
+
+</main>
+<footer>
+  <p>&copy; Copyright 2099. All Rights Reserved.</p>
+  <a href="mailto:support@fryinhigh.com">Request information</a>
+  <p>Lisa Templeton &nbsp;&nbsp; c0661989</p>
+</footer>
+
+<script src="scripts/script.js"></script>
+<script>
+  // Fallback inline script for hamburger (in case external fails)
+  document.addEventListener('DOMContentLoaded', function() {
+    const burger = document.querySelector('.hamburger');
+    const navList = document.querySelector('.nav-list');
+    if (burger && navList) {
+      const toggle = () => navList.classList.toggle('active');
+      burger.addEventListener('click', toggle);
+      burger.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') toggle();
+      });
+    }
+  });
+</script>
+</body>
+</html>

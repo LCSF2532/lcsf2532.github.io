@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<!---This website was created by: Lisa Templeton c0661989 2025--->
+<!---FAQs--->
+<html lang="en">
+<head>
+    <title>Fryin' High FAQs</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/faqs.css">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/logo12.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <a class="skip-link" href="#content">Skip to content</a>
+</head>
+<body> 
+
+<header class ="header-container">
+		<a href="index.html">
+			<img src="images/logo.png" alt="Fryin' High Logo" width="400" height="400">
+		</a>
+
+	<nav class="main-nav" aria-label="Main navigation">
+		<div class="hamburger">&#9776;</div>
+			<ul class="nav-list">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="team.html">Our Team</a></li>
+				<li><a href="specials.html">Specials</a></li>
+				<li><a href="training.html">Training</a></li>
+				<li><a href="media.html">Media</a></li>
+				<li><a href="faqs.html">FAQs</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+			</ul>
+		</div>
+	</nav>
+</header>
+
+    <!-- Hero Image -->
+    <section id="hero">
+        <img src="images/heroooooo.png" alt="Fryin' High Hero Image" width="1520" height="500">
+	</section>
+<main>
+	<div id="intro">
+	<p>“Fry Curious? Here’s What You Need to Know”</p>
+	<p>“Deep Frying FAQs: Techniques, Safety, and Best Practices”.<p>
+	
+	</div>
+</main>
+
+  <header>
+    <h1>Deep Frying FAQs</h1>
+    <p class="note">Clear, practical answers for safer, tastier frying at home.</p>
+    <div class="intro">
+      <strong>Heads up:</strong> Keep oil between <strong>350–375°F</strong> for crisp results, and never leave hot oil unattended.
+    </div>
+  </header>
+
+  <main id="content">
+    <section aria-labelledby="faq-heading">
+      <h2 id="faq-heading">Your questions, answered</h2>
+
+      <div class="faq-list">
+        <details>
+          <summary>What is deep frying?</summary>
+          <div class="answer">
+            Deep frying is cooking by submerging food in hot oil, typically 350–375°F (175–190°C), creating a crispy exterior and tender interior.
+          </div>
+        </details>
+
+        <details>
+          <summary>What kind of oil should I use?</summary>
+          <div class="answer">
+            Neutral, high-smoke-point oils like peanut, canola, or sunflower are best. Avoid olive oil.
+          </div>
+        </details>
+
+        <details>
+          <summary>How do I know when the oil is ready?</summary>
+          <div class="answer">
+            Use a thermometer (350–375°F). Without one, a bread cube should brown in ~60 seconds.
+          </div>
+        </details>
+
+        <details>
+          <summary>Is deep frying safe at home?</summary>
+          <div class="answer">
+            Yes, if you never leave hot oil unattended, keep a lid nearby, and use a heavy pot or fryer.
+          </div>
+        </details>
+
+        <details>
+          <summary>Can I reuse frying oil?</summary>
+          <div class="answer">
+            Yes, up to 3–4 times if strained and stored properly. Discard if rancid or foamy.
+          </div>
+        </details>
+
+        <details>
+          <summary>How do I dispose of used oil?</summary>
+          <div class="answer">
+            Never pour down the drain. Cool, seal in a container, and discard with trash or recycle.
+          </div>
+        </details>
+
+        <details>
+          <summary>What foods are best for deep frying?</summary>
+          <div class="answer">
+            Fries, chicken, donuts, tempura, vegetables, seafood, and cheese sticks (pat dry first).
+          </div>
+        </details>
+
+        <details>
+          <summary>How do I keep fried food crispy?</summary>
+          <div class="answer">
+            Drain on a wire rack, avoid covering immediately, and serve promptly.
+          </div>
+        </details>
+
+        <details>
+          <summary>Is deep frying unhealthy?</summary>
+          <div class="answer">
+            Fried foods are higher in fat and calories. Use fresh oil and correct temperature to reduce absorption.
+          </div>
+        </details>
+
+        <details>
+          <summary>Do I need a deep fryer?</summary>
+          <div class="answer">
+            A heavy-bottomed pot and thermometer work well; electric fryers add convenience and safety.
+          </div>
+        </details>
+      </div>
+    </section>
+  </main>
+  
+
+  <footer>
+		<p>Need help with a specific fryer model? <a href="#">Contact us</a>.</p>
+		<p> &copy; Copyright 2099. All Rights Reserved.</p>
+		<a href="mailto:support@fryinhigh.com">Request information</a>
+		<p>Lisa Templeton &nbsp; &nbsp;  c0661989</p>
+	</footer>
+
+  <script src="scripts/script.js"></script>
+	
+<script>
+document.querySelector('.hamburger').addEventListener('click', function() {
+  document.querySelector('.nav-list').classList.toggle('active');
+}); 
+
+document.querySelectorAll('.faq-list details').forEach((faq) => {
+    faq.addEventListener('toggle', function () {
+        if (faq.open) {
+            document.querySelectorAll('.faq-list details').forEach((otherFaq) => {
+                if (otherFaq !== faq) {
+                    otherFaq.removeAttribute('open');
+                }
+            });
+        }
+    });
+});
+
+</script>
+  
+</body>
+</html>
