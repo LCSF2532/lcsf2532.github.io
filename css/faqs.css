@@ -1,0 +1,100 @@
+/* ===========================
+   Fryin' High FAQs Stylesheet
+   Author: Lisa Templeton
+   Date: November 2025
+=========================== */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fdf6f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #ff914d;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.note {
+    text-align: center;
+    font-size: 1rem;
+    color: #555;
+}
+
+.intro {
+    text-align: center;
+    background-color: #fff3e6;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 15px auto;
+    width: 80%;
+    font-size: 1rem;
+}
+
+/* FAQ Section */
+.faq-list {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+details {
+    background: #fff;
+    border: 2px solid #ff914d;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+details:hover {
+    background: #fff8f3;
+}
+
+summary {
+    font-weight: bold;
+    color: #ff914d;
+    outline: none;
+}
+
+.answer {
+    margin-top: 8px;
+    color: #333;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+
+details[open] .answer {
+    animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #eee;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #ff914d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #e6762f;
+}

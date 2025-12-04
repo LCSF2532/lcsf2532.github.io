@@ -1,0 +1,151 @@
+/* ===========================
+   Fryin' High Specials Stylesheet
+   Author: Lisa Templeton
+   Date: November 2025
+=========================== */
+
+
+/* Main */
+main {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+h1 {
+  color: #ff914d;
+  font-size: 2.2rem;
+  text-align: center;
+}
+
+
+
+/* Specials */
+#specials-container {
+  margin-top: 20px;
+}
+.special-item {
+  background: #fffdf7;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+.special-item h2 {
+  color: #e6762f;
+  margin-top: 0;
+}
+.special-item img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin: 0 auto;       
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+
+}
+.special-item img:hover {
+  transform: scale(1.02);
+}
+
+.special-item img {
+  display: block;        
+  margin: 0 auto;       
+  max-width: 100%;      
+  height: auto;          
+  border-radius: 8px;    
+}
+
+.special-item a {
+  display: inline-block;
+  background: #ff914d;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+.special-item a:hover {
+  background: #e6762f;
+}
+
+ul, ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.reasons {
+  list-style-type: none;   
+  margin: 0;              
+  padding: 0;             
+}
+
+.reasons li {
+  display: flex;          
+  align-items: flex-start; 
+  gap: 0.75rem;            
+  margin-bottom: 1rem;     
+}
+
+
+
+.reasons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 20px auto;
+  justify-content: space-between;
+}
+
+.reason {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: calc(50% - 20px);
+  background: #fffdf7;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.reason img {
+  width: 96px;
+  height: auto;
+  border-radius: 8px;
+}
+
+  .reason {
+    width: 100%; 
+    flex-direction: column; 
+    text-align: center;
+    padding: 20px;
+  }
+
+  .reason img {
+    width: 80px; 
+    margin-bottom: 10px;
+  }
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #eee;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #ff914d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #e6762f;
+}

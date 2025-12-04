@@ -1,0 +1,132 @@
+/*CSS for Fryin' High Web Site*/
+/*
+Author: Lisa Templeton
+Date: October 2025
+File Name: styles.css
+*/
+
+/*CSS Reset*/
+/* Global Reset */
+
+body {
+  text-align: center;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  background-color: #000; /* Black background */
+  color: #fff;            /* White text */
+  font-family: 'Helvetica Neue', sans-serif;
+  line-height: 1.6;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #000;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ccc; /* Slight gray on hover */
+}
+
+/* Headings */
+h1, h2, h3, h4 {
+  color: #fff;
+}
+
+/* Buttons */
+button {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ccc;
+}
+
+/* Links */
+a {
+  color: #fff;
+}
+
+a:hover {
+  color: #ccc;
+}
+
+/* Footer */
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* Hero Section */
+.hero {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #111;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.hero {
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('hero.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-image {
+  display: block;
+  margin: 0 auto; /* centers the image horizontally */
+  width: 80%; /* adjust as needed */
+  max-width: 1000px;
+  border-radius: 50px; /* creates rounded sides */
+  object-fit: cover;
+}
+
+.centered-map {
+  display: block;
+  margin: 40px auto; /* centers horizontally with spacing */
+  border-radius: 12px; /* optional: rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* optional: adds depth */
+}
+
+iframe {
+  margin-top: 40px; /* adds space above the map */
+  margin-bottom: 40px; /* adds space below the map */
+}
+
