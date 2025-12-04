@@ -1,0 +1,109 @@
+/* Base table styles (mobile-first) */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+caption {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+th, td {
+    border: 1px solid #333;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #ffcc00;
+}
+
+/* Alternate row coloring */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #ffe680;
+}
+
+/* Show mobile by default */
+.table-mobile {
+  display: block;
+}
+
+
+  table {
+    width: 100%;
+    border: 1px solid #000;
+  }
+
+  caption {
+    font-size: 1.5em;
+    padding: 1%;
+  }
+
+  th, td {
+    padding: 2%;
+    border: 1px solid #000;
+  }
+
+  th {
+    font-size: 1.15em;
+  }
+}
+
+
+/* Base table styles for desktop */
+.table-desktop table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+.table-desktop caption {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.table-desktop th, .table-desktop td {
+    border: 1px solid #333;
+    padding: 8px;
+    text-align: center;
+}
+
+.table-desktop th {
+    background-color: #ffcc00;
+}
+
+/* Alternate row coloring */
+.table-desktop tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table-desktop tr:hover {
+    background-color: #ffe680;
+}
+
+/* Show mobile by default, hide desktop */
+.table-mobile {
+    display: block;
+}
+
+.table-desktop {
+    display: none;
+}
+
+/* Desktop view: hide mobile, show desktop */
+@media (min-width: 769px) {
+    .table-mobile {
+        display: none;
+    }
+    .table-desktop {
+        display: block;
+    }
+}
